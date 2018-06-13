@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Procurar Localização</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <h1>Digitar Endereço</h1>
+    <form action="/localizacao/procurarlocalizacao/" method="POST">
+        <!-- <label>Digite seu CEP:</label>
+        <br>
+        <input style="width:222px"type="number" name="cep" id="cep"> -->
+        <label>Endereço:</label>
+        <input style="width:222px"type="text" name="endereco" id="endereco" placeholder="Ex: Rua General Osório">
+        <br>
+        <label>Cidade:</label>
+        <input style="width:222px"type="text" name="cidade" id="cidade" placeholder="Ex: Franca">
+        <button type="submit">Buscar</button> 
+    </form>
+    </body>
+</html>

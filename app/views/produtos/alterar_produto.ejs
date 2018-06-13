@@ -1,0 +1,24 @@
+<html lang="pt-br">
+    <head>
+        <title>Alterar Produto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Alterar Produto</h1>
+        <form action="/produtos/produtoAlterado" method="post">
+            <label>Nome</label>
+            <input type"number" name="id" id="id" value="<%= produto[0].id %>" hidden="hidden">
+            <input type="text" name="nome" id="nome" value="<%= produto[0].nome %>">
+            <br>
+            <label>Categoria</label>
+            <input type="text" name="categoria" id="categoria" value="<%= produto[0].categoria %>">
+            <br>
+            <label>Preço</label>
+            <input type="number" name="preco" id="preco" value="<%= produto[0].preco %>">
+            <br>
+            <button type="submit">Alterar</button>
+        </form>
+    </body>
+</html>

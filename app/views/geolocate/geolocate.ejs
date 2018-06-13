@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeLZ4e2fdBNPO9wjhN70vHJHjvSpBYMik&callback=initMap"
+    async defer></script>
+  <title>Google Maps Básico</title>
+</head>
+<body>
+  <!-- <script src="../js/maps.js" type="text/javascript"></script> -->
+  <!-- <button onClick="initialize()">Iniciar!</button> -->
+  <div id="map" style="width:50%; height:400px"></div>
+  <input type="text" id="lat" value="<%= local[0] %>" hidden="hidden">
+  <input type="text" id="long" value="<%= local[1] %>" hidden="hidden">
+  <script>
+    function initMap() {
+      
+      var latd = parseFloat(document.getElementById('lat').getAttribute("value"));
+      var long = parseFloat(document.getElementById('long').getAttribute("value"));
+      
+      var coordenadas = {lat: latd, lng: long}
+
+      var opcoes = {
+        zoom: 18,
+        center: coordenadas
+      }
+
+      var map = new google.maps.Map(document.getElementById('map'), opcoes)
+
+      var marker = new google.maps.Marker({
+        position: coordenadas,
+        map: map,
+        title: 'voce'
+      })
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html lang="en">
+    <head>
+        <title>Adicionar Produto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Adicionar Produto</h1>
+        <form action="/produtos/novoproduto/" method="POST">
+            <label>Nome</label>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <label>Categoria</label>
+            <input type="text" name="categoria" id="categoria">
+            <br>
+            <label>Preço</label>
+            <input type="number" name="preco" id="preco">
+            <br>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </body>
+</html>
