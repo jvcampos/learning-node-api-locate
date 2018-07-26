@@ -1,7 +1,8 @@
 NodeJS API usando localização.
 
-O que é ?
+<strong>O que é ?</strong>
 
-Uma aplicação simples que recupera o endereço: {Rua, bairro, cep}
+Uma aplicação simples que recupera o endereço: <strong>{Rua, bairro, Cep}</strong>
+
 Logo após isso, mostra um mapa da google, com a locazalização baseada no endereço.
  
